@@ -13,5 +13,6 @@ jobs:
       - name: List All Files
         run: ls
       - name: List project Files
-        run: ls ${{github.workspace}}
+        run: | 
+          ls ${{github.workspace}}
       - run: echo "The jobs status is ${{job.status}}"
