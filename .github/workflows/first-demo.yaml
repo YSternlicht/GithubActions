@@ -1,0 +1,8 @@
+name: Rivky First Action
+run-name: ${{github.actor}} is testing out github actions
+on: push
+jobs:
+  Explore-Interesting-Stuff:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job was automagically triggered by a ${{github.event_name}}"
